@@ -12,7 +12,9 @@ FIXED_VACATION_DAYS_PAYOUT = 5  # The fixed nr of vacation days that can be paid
 class Payroll:
     def payment(self):
         return "Recieved payment"
-
+    def lms(self):
+        return "Learning course assigned!"
+    
 class VacationDaysShortageError(Exception):
     """Custom error that is raised when not enough vacation days are available."""
 
